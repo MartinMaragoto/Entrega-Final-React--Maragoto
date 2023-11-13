@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: "Technica" ;
+    src: url(technica.ttf);
+}
+
+@font-face {
+    font-family: "Retro Gaming" ;
+    src: url(retroGaming.ttf);
+}
+.subtitle {
+
+    text-align: center;
+    color: #7c9bff;
+
+}

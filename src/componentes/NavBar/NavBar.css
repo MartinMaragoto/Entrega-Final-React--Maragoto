@@ -1,0 +1,42 @@
+a {
+    text-decoration: none;
+    color: unset;
+
+}
+
+@font-face {
+    font-family: "Designer" ;
+    src: url(designer.otf);
+}
+body {
+
+    background: url('fondo1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #2f60ff;
+    height: 6vw;
+}
+
+.title {
+
+    font-size: 4vw;
+    font-family: 'Designer';
+    background: linear-gradient(to top,#ff23b1 , #1c137d );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+li {
+    display: inline-block;
+    margin: 4vw;
+    cursor: pointer;
+    font-size: 1.5vw;
+    color: #7c9bff;
+    font-family: 'technica';
+}

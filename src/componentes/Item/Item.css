@@ -1,0 +1,34 @@
+
+.cardProducto {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgb(129, 98, 124);
+width: 30vw;
+margin: 2vw;
+padding: 2vw;
+border-radius: 10px;
+font-family: 'technica';
+}
+.productImage{
+width: 60%;
+height: 60%;
+}
+/* .productName{
+
+}
+.productPrice{
+
+}
+.productID{
+
+} */
+
+.productButton {
+background-color:rgb(241, 255, 44);
+font-size: 1.5vw;
+font-family: 'Retro Gaming';
+border: none;
+border-radius: 7px;
+padding: 3px;
+}
