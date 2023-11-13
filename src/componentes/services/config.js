@@ -7,7 +7,7 @@ import {getFirestore} from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA-y31vzsKQCvoDUmMa_mOe3z9z9nUW5rU",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "tienda-retro-online.firebaseapp.com",
   projectId: "tienda-retro-online",
   storageBucket: "tienda-retro-online.appspot.com",
