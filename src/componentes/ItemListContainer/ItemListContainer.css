@@ -1,21 +1,21 @@
 
 @font-face {
     font-family: "Technica" ;
-    src: url('./technicaUltra.ttf');
+    src: url('/assets/technicaUltra.ttf');
 }
 
 @font-face {
     font-family: "TechnicaSB" ;
-    src: url('./technicaSemiBold.ttf');
+    src: url('/assets/technicaSemiBold.ttf');
 }
 
 @font-face {
     font-family: "Retro Gaming" ;
-    src: url('./retroGaming.ttf');
+    src: url('/assets/retroGaming.ttf');
 }
 @font-face {
     font-family: "Rexlia" ;
-    src: url('./rexlia.otf');
+    src: url('/assets/rexlia.otf');
 }
 
 .subtitle {

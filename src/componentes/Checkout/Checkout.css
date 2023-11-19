@@ -1,3 +1,18 @@
+.contador {
+
+    font-size: 2vw;
+}
+
+.yellowButton {
+
+    background-color: rgb(255, 255, 129);
+    border-radius: 10px;
+    width: 4vw;
+    height: 4vw;
+    font-size: 2vw;
+
+}
+
 .form {
     margin: auto;
     display: flex;

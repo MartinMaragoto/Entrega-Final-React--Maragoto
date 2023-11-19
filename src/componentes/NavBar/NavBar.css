@@ -6,7 +6,7 @@ a {
 
 @font-face {
     font-family: "Designer" ;
-    src: url('./designer.otf');
+    src: url('/assets/designer.otf');
 }
 body {
 
