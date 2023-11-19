@@ -24,7 +24,7 @@ const Contador = ({ inicial, stock, funcionAgregar }) => {
                 <strong> {contador} </strong>
                 <button onClick={sumarContador}> + </button>
             </div>
-            <button onClick={()=> funcionAgregar(contador)}> Agregar al Carrito </button>
+            <button className="agregarCarrito" onClick={()=> funcionAgregar(contador)}> Agregar al Carrito </button>
         </>
 
     )

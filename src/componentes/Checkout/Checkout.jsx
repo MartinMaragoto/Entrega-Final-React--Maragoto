@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react"
 import { CarritoContext } from "../../context/CarritoContext"
 import { db } from "../services/config"
 import { collection, addDoc, updateDoc, doc, getDoc } from "firebase/firestore"
-
+import './Checkout.css'
 
 
 
@@ -84,9 +84,9 @@ const Checkout = () => {
     return (
         <div>
 
-            <h2>Checkout</h2>
+            <h2 className="h3Subtitle">Checkout</h2>
 
-            <form onSubmit={manejadorFormulario}>
+            <form className="form" onSubmit={manejadorFormulario}>
                 {
                     carrito.map(producto => (
 
@@ -100,28 +100,28 @@ const Checkout = () => {
                     ))
                 }
                 <div>
-                    <label htmlFor="">Nombre</label>
-                    <input type="text" onChange={(e) => setNombre(e.target.value)} />
+                    <label className="label" htmlFor="">Nombre</label>
+                    <input  className="input"type="text" onChange={(e) => setNombre(e.target.value)} />
 
                 </div>
                 <div>
-                    <label htmlFor="">Apellido</label>
-                    <input type="text" onChange={(e) => setApellido(e.target.value)} />
+                    <label className="label" htmlFor="">Apellido</label>
+                    <input  className="input"type="text" onChange={(e) => setApellido(e.target.value)} />
 
                 </div>
                 <div>
-                    <label htmlFor="">Telefono</label>
-                    <input type="text" onChange={(e) => setTelefono(e.target.value)} />
+                    <label className="label" htmlFor="">Telefono</label>
+                    <input  className="input"type="text" onChange={(e) => setTelefono(e.target.value)} />
 
                 </div>
                 <div>
-                    <label htmlFor="">Email</label>
-                    <input type="email" onChange={(e) => setEmail(e.target.value)} />
+                    <label className="label" htmlFor="">Email</label>
+                    <input className="input" type="email" onChange={(e) => setEmail(e.target.value)} />
 
                 </div>
-                <div>
-                    <label htmlFor="">Confirmar Email</label>
-                    <input type="email" onChange={(e) => setEmailConfirmacion(e.target.value)} />
+                <div >
+                    <label className="label" htmlFor="">Confirmar Email</label>
+                    <input className="input" type="email" onChange={(e) => setEmailConfirmacion(e.target.value)} />
 
                 </div>
 
@@ -130,11 +130,11 @@ const Checkout = () => {
                     error && <p> {error} </p>
                 }
 
-                <button type="submit">Confirmar compra</button>
+                <button className="confirmarCheckout" type="submit">Confirmar compra</button>
 
                 {
                     ordenId && (
-                        <strong>Gracias por tu compra! Tu número de orden es: {ordenId} </strong>
+                        <strong className="graciasPorComprar" >Gracias por tu compra! Tu número de orden es: {ordenId} </strong>
                     )
                 }
             </form>

@@ -16,7 +16,6 @@ const ItemListContainer = () => {
 
     const misProductos = idCategoria ? query(collection(db, "inventario"), where ("idCat", "==", idCategoria)): collection (db, "inventario"); 
 
-
     getDocs (misProductos)
     .then (res => {
         const nuevosProductos = res.docs.map(doc => {
@@ -41,7 +40,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-      <h2>Mis productos</h2>
+      <h2 className='productTitle'>Productos</h2>
       <ItemList productos={productos} />
     </>
   )

@@ -4,31 +4,79 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background-color: rgb(129, 98, 124);
+/* CAMBIANDO EL WIDTH PARA LA MEDIAQUERIES */
 width: 30vw;
 margin: 2vw;
 padding: 2vw;
 border-radius: 10px;
 font-family: 'technica';
+font-size: 1.5vw;
 }
+
+.cardProducto2 {
+    margin: 2vw auto auto auto;
+    width: 35vw;
+    }
+
+
 .productImage{
 width: 60%;
 height: 60%;
 }
-/* .productName{
 
-}
-.productPrice{
-
-}
-.productID{
-
-} */
 
 .productButton {
 background-color:rgb(241, 255, 44);
-font-size: 1.5vw;
+font-size: 2vw;
 font-family: 'Retro Gaming';
 border: none;
 border-radius: 7px;
 padding: 3px;
 }
+.productButton2 {
+    background-color:rgb(241, 255, 44);
+    font-size: 1.5vw;
+    font-family: 'Retro Gaming';
+    border: none;
+    border-radius: 7px;
+    padding: 3px;
+    width: 20vw;
+    margin: auto;
+    }
+
+ 
+
+.productDiv{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.linea {
+
+    width: 80%;
+}
+.productDiv2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.contenedorBotones {
+
+    display: inline-block;
+
+}
+.productButton3 {
+    background-color:rgb(241, 255, 44);
+    font-size: 1.5vw;
+    font-family: 'Retro Gaming';
+    border: none;
+    border-radius: 7px;
+    padding: 3px;
+    width: 20vw;
+    margin: 10px 20px 0 0;
+    }
+
+   

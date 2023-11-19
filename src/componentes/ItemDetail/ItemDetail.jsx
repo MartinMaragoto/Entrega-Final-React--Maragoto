@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { CarritoContext } from '../../context/CarritoContext';
 import { useContext } from 'react';
-
+import './ItemDetail.css'; 
 
 
 const ItemDetail = ({ id, nombre, stock, precio, img }) => {
@@ -25,20 +25,26 @@ const ItemDetail = ({ id, nombre, stock, precio, img }) => {
 
   
   return (
-    <div className='cardProducto'>
-      <h2>Nombre: {nombre} </h2>
-      <h3>Precio: {precio} </h3>
-      <h3>ID: {id} </h3>
+    <div className='cardProducto cardProducto2'>
+      <h2>{nombre} </h2>
+      <h3>U$D {precio} </h3>
+      <h3>Stock: {stock} </h3>
+
       <img className='productImage' src={img} alt= {nombre} />
-      <p> Esta es una descripción del producto </p>
+      <p> Este producto es majestuoso </p>
 
       {
 
       }
 
-      {
-         agregarCantidad > 0 ? (<Link to="/cart">Terminar Compra</Link>) : (<Contador inicial={1} stock={stock} funcionAgregar={manejadorCantidad}/>)
-      }
+{agregarCantidad > 0 ? (
+    <>
+        <Link to="/cart" className='terminarCompra'>Comprar ahora</Link>
+        <Link to="/" className='buscarMasProductos'>Buscar mas productos</Link>
+    </>
+) : (
+    <Contador inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />
+)}
     </div>
   )
 }

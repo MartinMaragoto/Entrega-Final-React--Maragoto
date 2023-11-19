@@ -1,16 +1,59 @@
 
 @font-face {
     font-family: "Technica" ;
-    src: url(technica.ttf);
+    src: url(technicaUltra.ttf);
+}
+
+@font-face {
+    font-family: "TechnicaSB" ;
+    src: url(technicaSemiBold.ttf);
 }
 
 @font-face {
     font-family: "Retro Gaming" ;
     src: url(retroGaming.ttf);
 }
+@font-face {
+    font-family: "Rexlia" ;
+    src: url(rexlia.otf);
+}
+
 .subtitle {
 
     text-align: center;
     color: #7c9bff;
+
+}
+
+.h3Subtitle {
+
+    text-align: center;
+    color: rgb(226, 169, 217);
+    font-size: 2vw;
+    font-family: "technica";
+
+}
+
+.total {
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    font-family: "technicaSB";
+}
+/* color: rgb(226, 169, 217); */
+.parrafo {
+
+    text-align: center;
+    color: #7c9bff;
+    font-size: 1.5vw;
+    font-family: "technica";
+}
+.productTitle {
+
+    text-align: center;
+    color: rgb(226, 169, 217);
+    font-size: 2vw;
+    font-family: "technicaSB";
 
 }
