@@ -10,7 +10,7 @@ a {
 }
 body {
 
-    background: url('./fondo1.jpg');
+    background: url('public/fondo1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
